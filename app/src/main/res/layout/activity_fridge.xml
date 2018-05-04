@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.unitec.frecipegroup.frecipeapp.FridgeActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lbl_fridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="77dp"
+        android:text="@string/my_fridge"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="77dp"
+        android:background="@mipmap/ic_add"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:columnCount="2"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_fridge"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <Button
+            android:id="@+id/btn_expiring"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorButton"
+            android:drawableTop="@mipmap/ic_expiring"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/expiring_soon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btn_expired"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:drawableTop="@mipmap/ic_expired"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/expired"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="198dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btn_grains"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/grains"
+            android:text="@string/grains"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_vegetables"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/vegetables"
+            android:text="@string/vegetables"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_fruits"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/fruit"
+            android:text="@string/fruits"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_meat"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/meat"
+            android:text="@string/meat"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_dairy"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/dairy"
+            android:text="@string/dairy"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_other"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/other"
+            android:text="@string/other"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_home"
+        android:icon="@mipmap/ic_home"
+        app:showAsAction="always"
+        android:title="@string/home">
+    </item>
+    <item
+        android:id="@+id/item_fridge"
+        android:icon="@mipmap/ic_fridge"
+        app:showAsAction="always"
+        android:title="@string/fridge">
+    </item>
+    <item
+        android:id="@+id/item_book"
+        android:icon="@mipmap/ic_book"
+        app:showAsAction="always"
+        android:title="@string/book">
+    </item>
+    <item
+        android:id="@+id/item_account"
+        android:icon="@mipmap/ic_account"
+        app:showAsAction="ifRoom"
+        android:title="@string/account">
+    </item>
+    <item
+        android:id="@+id/item_settings"
+        android:icon="@mipmap/ic_settings"
+        app:showAsAction="ifRoom"
+        android:title="@string/settings">
+    </item>
+</menu>
